@@ -6,4 +6,5 @@ from django.http import HttpResponse
 #def index(request):
 #    return HttpResponse("Hello, world")
 def index(request):
-    return render(request, 'first_app/indedx.html')
+    t = "Главная страница"
+    return render(request, 'first_app/indedx.html', {'title': t})
